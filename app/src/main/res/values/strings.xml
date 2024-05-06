@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">D&amp;DMagicItem</string>
+    <string name="common">Common</string>
+    <string name="uncommon">Uncommon</string>
+    <string name="rare">Rare</string>
+    <string name="vRare">Very Rare</string>
+    <string name="legendary">Legendary</string>
+    <string name="lMode">Light Mode</string>
+    <string name="dMode">Dark Mode</string>
+    <string name="armor">Armor</string>
+    <string name="weapon">Weapon</string>
+    <string name="consumable">Consumable</string>
+    <string name="roll">Roll</string>
+    <string name="main">Home</string>
+    <string name="reRoll">Roll Again</string>
+    <string name="settings">Settings</string>
+    <string name="exit">Exit</string>
+    <string name="addItem">Add Item</string>
+    <string name="app_name_true">DnD Magic Item Generator</string>
+    <string name="monster">Oh No! a Mimic ate this page</string>
+    <string name="notReady">Please pardon this unforeseen outcome. We will hire adventures to fix this quickly.</string>
+    <string name="btnMain">Home</string>
+    <string name="desChest">Open Chest</string>
+    <string name="mainChoice">Select Which Image you want to Generate</string>
+    <string name="addName">Name</string>
+    <string name="addDes">Description</string>
+    <string name="addRarity">Rarity</string>
+    <string name="addCost">Cost</string>
+    <string name="addItemBtn">Add Item</string>
+    <string name="addType">Type</string>
+    <string name="back">Main Menu</string>
+    <string name="cancel">Cancel</string>
+    <string name="addPhoto">Open Gallery</string>
+    <string name="getItem">Get Magic Item</string>
+    <string name="update">Update</string>
+    <string name="aboutName">Name: Robert Sharp</string>
+    <string name="aboutAppV">App Version: 0.01</string>
+    <string name="aboutApp">App: This is your one stop shop for all magic items.
+    Instead of going on grand adventures, you can have any random magic item with a few
+    clicks of a button. Never before has magic items been as accessible as they are now</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

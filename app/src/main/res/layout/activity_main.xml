@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".MainActivity"
+    >
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="371dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center"
+        android:text="@string/app_name_true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:fontFamily="cursive"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:textAllCaps="true" />
+
+    <ImageButton
+        android:id="@+id/imgChest"
+        android:layout_width="320dp"
+        android:layout_height="204dp"
+        android:layout_marginStart="109dp"
+        android:layout_marginEnd="123dp"
+        android:layout_marginBottom="452dp"
+        android:contentDescription="@string/desChest"
+        android:scaleType="centerInside"
+        android:background="#45484D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        tools:srcCompat="@drawable/tresure_check_gray" />
+
+    <ImageButton
+        android:id="@+id/imgButtonSword"
+        android:layout_width="133dp"
+        android:layout_height="152dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="298dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:background="#45484D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imgButtonArmor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgChest"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/imgButtonArmor"
+        android:layout_width="119dp"
+        android:layout_height="154dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="292dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:background="#45484D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imgButtonDrink"
+        app:layout_constraintStart_toEndOf="@+id/imgButtonSword"
+        app:layout_constraintTop_toBottomOf="@+id/imgChest"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/imgButtonDrink"
+        android:layout_width="117dp"
+        android:layout_height="156dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="292dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:background="#45484D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgButtonArmor"
+        app:layout_constraintTop_toBottomOf="@+id/imgChest"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/txtSelect"
+        android:layout_width="313dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="23dp"
+        android:text="@string/mainChoice"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toTopOf="@+id/imgButtonSword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgChest" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fbtnAllItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_baseline_storage_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

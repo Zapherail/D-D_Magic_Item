@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/txtAddName"
+        android:layout_width="223dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/txtAddDes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtAddNameTxt"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtAddDes"
+        android:layout_width="254dp"
+        android:layout_height="223dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="57dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/txtAddName" />
+
+    <EditText
+        android:id="@+id/txtAddCost"
+        android:layout_width="198dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="83dp"
+        android:layout_marginBottom="148dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/txtAddNameTxt"
+        android:layout_width="83dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="4dp"
+        android:gravity="center"
+        android:text="@string/addName"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toStartOf="@+id/txtAddName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="79dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="6dp"
+        android:gravity="center"
+        android:text="@string/addDes"
+        app:layout_constraintEnd_toStartOf="@+id/txtAddDes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAddNameTxt" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="98dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="156dp"
+        android:gravity="center"
+        android:text="@string/addCost"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txtAddCost"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnAddItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="68dp"
+        android:text="@string/addItemBtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Switch
+        android:id="@+id/swWeapon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/weapon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rarityGroup1" />
+
+    <Switch
+        android:id="@+id/swArmor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/armor"
+        app:layout_constraintStart_toEndOf="@+id/swWeapon"
+        app:layout_constraintTop_toBottomOf="@+id/rarityGroup1" />
+
+    <Switch
+        android:id="@+id/swConsumable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/consumable"
+        app:layout_constraintStart_toEndOf="@+id/swArmor"
+        app:layout_constraintTop_toBottomOf="@+id/rarityGroup1" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="68dp"
+        android:text="@string/cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintStart_toEndOf="@+id/btnAddItem" />
+
+    <RadioGroup
+        android:id="@+id/rarityGroup1"
+        android:layout_width="368dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAddDes">
+
+        <RadioButton
+            android:id="@+id/rbVeryRare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vRare" />
+
+        <RadioButton
+            android:id="@+id/rbLegendary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/legendary" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rarityGroup2"
+        android:layout_width="363dp"
+        android:layout_height="59dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/rarityGroup1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/rbCommon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/common" />
+
+        <RadioButton
+            android:id="@+id/rbUncommon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/uncommon" />
+
+        <RadioButton
+            android:id="@+id/rbRare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/rare" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
