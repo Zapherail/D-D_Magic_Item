@@ -40,7 +40,7 @@ public class DBItems extends AppCompatActivity {
         recyclerView = findViewById(R.id.recyclerView);
         //setting widget
         home = findViewById(R.id.btnHome);
-
+        
         //bringing database in
         itemDB = new ItemDB(DBItems.this);
         //ArrayList to save information from database
